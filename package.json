@@ -1,0 +1,25 @@
+{
+  "name": "weatherforecastbrowser",
+  "version": "1.0.0",
+  "description": "<b>Brief Overview:</b>At the top, a user is going to be able to search for a city such as New York or San Francisco, they submit the city by clicking \"search here\" or enter. We're going to submit a query to a third party API that's going to serve us back forecasted weather data for the next 5 days. Once we get that weather back, we're going to add a row on a table with information about that particular cities forecast for the next 5 days. The user can search for many different cities over time and for each search it'll just add an additional row. The table will consist of the city, and graphs for temperature, pressure and humidity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zohaib Shahzad",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.4.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+  }
+}
