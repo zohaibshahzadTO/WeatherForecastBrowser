@@ -58,3 +58,7 @@ Looking at the action passed through the reducer, all we care about for the redu
 # Building a List Container
 
 Our redux side of the application looks good so far. We have an action creator that can make an AJAX request to the weather API and we've got a reducer to handle that as well. Now we need to make a new component to render our list of cities with all of the appropriate data. This new component will be a container since it requires access to the data from redux.
+
+# Adding Sparkline Charts
+
+For the temperature, pressure, and humidity sections of the table, we're going to be adding the graphs using a library called "React-Sparklines". For the most part, its quite simple except that we now need to create arrays for temperature, pressure, and humidity and somehow extract those value from each city entered respectively and input them into the respective arrays.

@@ -20,6 +20,7 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-redux": "^5.0.7",
+    "react-sparklines": "^1.6.0",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3"
   }
