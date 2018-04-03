@@ -62,3 +62,5 @@ Our redux side of the application looks good so far. We have an action creator t
 # Adding Sparkline Charts
 
 For the temperature, pressure, and humidity sections of the table, we're going to be adding the graphs using a library called "React-Sparklines". For the most part, its quite simple except that we now need to create arrays for temperature, pressure, and humidity and somehow extract those value from each city entered respectively and input them into the respective arrays.
+
+Since we need to do create similar snippets of sparklines for pressure and humidity, we should make a new component solely for displaying those sparklines graphs. We refactored the chart component to be its own separate functional component. Its reusable. Never good to replicate markup.  
