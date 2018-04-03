@@ -32,4 +32,12 @@ We signed up for an account on OpenWeatherMap.org and generated our own API key 
 
 # Middleware
 
-Doing AJAX requests with redux is quite complicated. Middleware's are function that take an action and depending on the actions type and actions payload or any other number of factors, the middleware can choose to let the action pass through, it can manipulate the action, it can console log it or stop it all together. It can do all of these types of little tasks on these actions before they reach any reducer. Its acts like a gatekeeper.
+Doing AJAX requests with redux is quite complicated. Middleware's are function that take an action and depending on the actions type and actions payload or any other number of factors, the middleware can choose to let the action pass through, it can manipulate the action, it can console log it or stop it all together. It can do all of these types of little tasks on these actions before they reach any reducer. Its acts like a gatekeeper. Lets import a piece of middleware called Redux Promise into the project.
+
+# AJAX Requests with Axios
+
+In this section, we're going to work on creating that actual AJAX request and temporarily bench the topic of middlewares and redux promises. Here we'll focus on making the actual request. Remember, our app state holds all the data of our application which includes stuff like weather data. We only change our app state via reducers and actions. To load our weather data and to actually change our app state, we need to dispatch an action creator which is going to be responsible for making that AJAX request. After setting up the API key and Root URL as well as the action creator in charge of making the ajax request. JQuery is an extensive library and has great features when it comes to making AJAX requests but here we're going to use a library called Axios which is a library solely made for making AJAX requests from the browser. 
+
+# Redux Promise
+
+So what we've done so far is setup a new action creator called "fetchWeather" which is responsible for creating an action that contains a request to the back end API. Its type was FETCH_WEATHER. Also note that the fetchWeather action creator takes a city which is a string and uses it as part of the search query like so. We also installed the Axios library which essentially behaves like the jQuery's AJAX method. It just reaches out in and does the ajax request in the form of a "GET" to the URL that we supply and it returns a promise and we pass that promise into the actions payload property.
