@@ -15,3 +15,9 @@ Next we have the ForecastList, which is the general overall table of the data fo
 # SearchBar
 
 Is it a component or container. It needs to have the ability to modify the state of our application by dispatching actions. It needs to be able to call an action creator and say "hey, someone just entered a search term, we need to make an API request". Hence it needs to talk to redux and so it needs to be a container.
+
+We have our input now and we're going to turn it into a controlled field which is a form element where the value of the input is set by the state of our component, not the other way around. We just set the initial state using a constructor in the SearchBar container and can also change the state over time by adding a change handler on the input fields. Placeholder will tell the user what the inputs for. The next two properties will turn it into a controlled component, first assigning a value to which will be *this.state.term* and whenever someone changes the input which is represented by the *onChange* property and named *this.onInputChange*. We're going to now bind the context of *onInputChange* to the component to be able to use setState by creating a function called *onInputChange(event)* and inside we'll setState using *this*. However, when using the *this* keyword inside that function, it doesn't refer to the component context necessarily but rather a mysterious context. So in order to use the *this* keyword outside of the component context, we binded it using *this.onInputChange.bind(this)* to use it.
+
+# Binding Context (*this*)
+
+Essentially, that line says that *this* which is an instance of the SearchBar component has a function called *onInputChange* and it binds that function to *this* which is SearchBar and then replace *onInputChange* with this new bound instance of this function.
