@@ -21,3 +21,7 @@ We have our input now and we're going to turn it into a controlled field which i
 # Binding Context (*this*)
 
 Essentially, that line says that *this* which is an instance of the SearchBar component has a function called *onInputChange* and it binds that function to *this* which is SearchBar and then replace *onInputChange* with this new bound instance of this function.
+
+# Form Elements in React
+
+Right now if we enter a city and click on "Submit" or enter, the form clears and we see a question mark on localhost:8080/?. Turns out that the browser actually thinks you're submitting the information and is making a POST request in which it then clears the form and re-renders. We can prevent this by adding an event handler to the form element. We want to handle the submit event on the form. So following the normal react nomenclature for DOM events. We're going to add a new function handler to the property named *onSubmit*. We get free functionality for using a form. Whenever a user sees a search bar, they have an expectation that they can type something in and just hit enter. Using a form element, we get that behavior for free so using a form element is better than using a div element. 
