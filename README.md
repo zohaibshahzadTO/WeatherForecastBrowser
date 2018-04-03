@@ -64,3 +64,7 @@ Our redux side of the application looks good so far. We have an action creator t
 For the temperature, pressure, and humidity sections of the table, we're going to be adding the graphs using a library called "React-Sparklines". For the most part, its quite simple except that we now need to create arrays for temperature, pressure, and humidity and somehow extract those value from each city entered respectively and input them into the respective arrays.
 
 Since we need to do create similar snippets of sparklines for pressure and humidity, we should make a new component solely for displaying those sparklines graphs. We refactored the chart component to be its own separate functional component. Its reusable. Never good to replicate markup.  
+
+# Labelling of Units
+
+Lets add a little numeric value to the graphs. First, we'll add a line on our chart that's just a single line that indicates the average and then we'll add another line underneath the chart indicating the average of the 5-day forecast for all three attributes. We'll do this using the react-sparklines library.
