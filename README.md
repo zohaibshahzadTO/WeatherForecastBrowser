@@ -69,6 +69,6 @@ Since we need to do create similar snippets of sparklines for pressure and humid
 
 Lets add a little numeric value to the graphs. First, we'll add a line on our chart that's just a single line that indicates the average and then we'll add another line underneath the chart indicating the average of the 5-day forecast for all three attributes. We'll do this using the react-sparklines library.
 
-# Google Maps Intergration
+# Google Maps Integration
 
 One last feature, I want to implement is replace where it the says the name of the city in the table with a small window of the location on google maps.
